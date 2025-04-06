@@ -8,7 +8,7 @@ COPY src /app/src
 RUN mvn -B clean package -DskipTests
 
 # Etapa de Execução
-FROM amazoncorretto:17-alpine-jdk
+FROM openjdk:21
 
 WORKDIR /app
 COPY --from=build /app/target/dominio-bancario-0.0.1-SNAPSHOT.jar /app/app.jar
