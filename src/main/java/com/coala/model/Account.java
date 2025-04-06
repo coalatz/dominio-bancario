@@ -20,10 +20,10 @@ public class Account {
 	
 	private String agency;
 	
-	@Column(scale = 13, precision = 2)
+	@Column(precision = 13, scale = 2)
 	private Long balance;
 	
-	@Column(name = "additionnal_limit" ,scale = 13, precision =2)
+	@Column(name = "additionnal_limit" ,precision = 13, scale =2)
 	private Long limit;
 	
 	public String getNumber() {

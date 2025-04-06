@@ -18,7 +18,7 @@ public class Card {
 	@Column(unique = true)
 	private String number;
 	
-	@Column(name = "card_limit" ,scale = 13, precision =2)
+	@Column(name = "card_limit" ,precision = 13, scale =2)
 	private Long limit;
 	
 	public String getNumber() {
